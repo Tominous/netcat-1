@@ -565,7 +565,7 @@ test('Server/Client: traffic pipe filter()', function (t) {
   }).pipe(clientGotData)
 })
 
-/*
+
 // BUG: filters not applied on the emitted data. Because of github.com/roccomuso/netcat/issues/4
 test('Server/Client: traffic on data filter()', function (t) {
   t.plan(2)
@@ -590,7 +590,7 @@ test('Server/Client: traffic on data filter()', function (t) {
     t.equal(data.toString(), 'SERVER DATA', 'client got filtered data')
   })
 })
-*/
+
 
 test('Proxy server', function (t) {
   t.plan(1)
